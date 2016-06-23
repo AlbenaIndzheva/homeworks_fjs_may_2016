@@ -1,2 +1,2 @@
-# All homeworks of FJ Group - May 2016
+# All homeworks of FJS Group - May 2016
 
