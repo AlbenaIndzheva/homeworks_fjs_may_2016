@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<body>
+	<script> 
+	"use strict"
+	// Вера Манова
+	// zadacha 1 Write an if statement that examines two integer variables and exchanges their values if the first one is
+	// greater than the second one.
+
+		var a = 3;
+		var b = 2;
+		var c = a;
+		if(a>b){
+
+			a = b; 
+			b = c;
+			console.log(a,b);
+
+		}
+	// zadacha 2 
+	// Write a script that shows the sign (+ or -) of the product of three real numbers without calculating it. Use a sequence of if statements.
+
+	
+		 // var firstNum = 4;
+		 // var secNum = 5;
+		 // var thirdNum = 6;
+
+		 //vsichko da e +, posle vs - posle da mimame 2 - ili 1 minus 
+//---------------------------------------------------------------------------------------
+		
+
+	// zadacha 3 
+	//Write a script that finds the biggest of three integers using nested if statements
+
+	var one = 10;
+	var two = 20;
+	var four = 30;
+		if(one>two){
+			if(one>four){
+
+				console.log(one);
+			}
+		}
+		if(two>one){
+			if(two>four){
+				console.log(two);
+			}
+		}
+		if(four>one){
+			if(four>two){
+				console.log(four);
+			}
+		}
+
+		// zadacha 4 
+		//Sort 3 real values in descending order using nested if statements.
+
+		var numOne = 40;
+		var numTwo = 50;
+		var numThree = 60;
+		
+			if(numOne>numTwo){
+				if(numOne>numThree){
+					if(numTwo>numThree){
+					console.log(numOne, numTwo, numThree);
+					}				
+				}
+			}
+			if(numOne>numTwo){
+				if(numOne>numThree){
+					if(numTwo<numThree){
+						console.log(numOne, numThree, numTwo);
+					}
+				}
+			}
+			
+			if(numThree>numTwo){
+				if(numThree>numOne){
+					if(numTwo>numOne){
+						console.log(numThree, numTwo, numOne);
+					}
+				}
+			}
+			if(numThree>numTwo){
+				if(numThree>numOne){
+					if(numTwo<numOne){
+						console.log(numThree, numOne,  numTwo);
+					}
+				}
+			}
+			if(numTwo>numOne){
+				if(numTwo>numThree){
+					if(numOne>numThree){
+						console.log(numTwo, numOne, numThree);
+					}
+				}
+			}
+			if(numTwo>numOne){
+				if(numTwo>numThree){
+					if(numOne<numThree){
+						console.log(numTwo, numThree, numOne );
+					}
+				}
+			}
+			// switch case zad 5 ; kvadratno uravnenie zad 6 ; math.max zad 7, koe e naj-golqmoto ; 
+
+
+			//zad.8 - s masivi.. math. i da se slojat v if-ove 
+			//da proverq let kakvo pravi...  naj dobre e da byde napraveno s funkciq .. , za da  moje da se preizpolzva koda v razlichni parcheta// hubavo e kogato se proverqva edna promenliva za mn razlichni neshta da byde vyv vlojeni 
+			// ifove
+	</script>
+</body>
+</html>
+

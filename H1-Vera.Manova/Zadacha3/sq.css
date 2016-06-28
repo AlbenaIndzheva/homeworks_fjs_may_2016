@@ -1,0 +1,8 @@
+#sq { 
+  width: 200px;
+  height: 200px;
+  background: red;
+  position: absolute;
+  top: 20;
+  left: 20px;
+}
