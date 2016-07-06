@@ -1,2 +1,2 @@
-# All homeworks of FJS Group - May 2016
+# Class tasks of FJS Group - May 2016
 
