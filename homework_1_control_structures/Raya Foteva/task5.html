@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<p>Задача 5: <br>
+Да се изведат съобщения към потребителя и да се прочетат три различни числа, разпечатайте в конзолата в низходящ ред. 
+</p>
+
+<div id="inputdiv">
+	<div class="input">
+		<label for="first">Въведете А:</label>		
+		<input type="number" id="a" value="0">
+	</div>							  
+	<div class="input">
+		<label for="second">Въведете В:</label>		
+		<input type="number" id="b" value="0">
+	</div>
+	<div class="input">
+		<label for="third">Въведете С:</label>		
+		<input type="number" id="c" value="0">
+	</div>	
+	<div id="inputbutton">
+		<button onclick="myFunction()">Резултат</button>
+	</div>
+</div>
+
+<p id="demo"></p>
+
+<script>
+"use strict"
+function myFunction() {
+    var a = document.getElementById("a").value;
+    a = parseFloat(a);
+    var b = document.getElementById("b").value;
+    b = parseFloat(b);
+    var c = document.getElementById("c").value;
+    c = parseFloat(c);
+
+    console.log(a);
+    console.log(b);
+    console.log(c);
+
+    if (a > b && a > c) {
+        if (b > c) {
+            console.log('Сортирани в низходящ ред: ' + a + ' ' + b + ' ' + c);
+        }
+        else if (c > b) {
+            console.log('Сортирани в низходящ ред: ' + a + ' ' + c + ' ' + b);
+        }
+    }
+    else if (b > a && b > c) {
+        if (a > c) {
+            console.log('Сортирани в низходящ ред: ' + b + ' ' + a + ' ' + c);
+        }
+        else if (c > a) {
+            console.log('Sort in descending order: ' + b + ' ' + c + ' ' + a);
+        }
+    }
+    else if (c > a && c > b) {
+        if (a > b) {
+            console.log('Сортирани в низходящ ред: ' + c + ' ' + a + ' ' + b);
+        }
+        else if (b > a) {
+            console.log('Сортирани в низходящ ред: ' + c + ' ' + b + ' ' + a);
+        }
+    }
+}
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<p>Задача 4: <br>
+Да се изведат съобщения към потребителя и да се прочетат две различни числа от клавиатурата A и B, разпечатайте в нарастващ ред. 
+</p>
+
+<div id="inputdiv">
+	<div class="input">
+		<label for="first">Въведете А:</label>		
+		<input type="number" id="a" value="0">
+	</div>							  
+	<div class="input">
+		<label for="second">Въведете В:</label>		
+		<input type="number" id="b" value="0">
+	</div>
+	<div id="inputbutton">
+		<button onclick="myFunction()">Резултат</button>
+	</div>
+</div>
+
+<p id="demo"></p>
+
+<script>
+"use strict"
+function myFunction() {
+	var a = document.getElementById("a").value;
+	a = parseFloat(a);
+    var b = document.getElementById("b").value;
+    b = parseFloat(b);
+
+    console.log(a);
+    console.log(b);
+
+    if (a > b) {
+    	console.log('Сортирани в нарастващ ред: ' + b + ' ' + a);
+    }
+    else {
+    	console.log('Сортирани в нарастващ ред 2: ' + a + ' ' + b);	
+    }
+}
+
+// Не работи, когато A = 2; B = 123
+
+
+</script>
+
+</body>
+</html>

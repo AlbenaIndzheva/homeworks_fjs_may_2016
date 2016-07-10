@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<p>Задача 7: <br>
+Въведете три стойности от клавиатурата – час(целочислен тип), сума пари(число с плаваща запетая), дали съм здрав(булев тип). Съставете програма, която взема решения на базата на тези данни по следния начин: <br>
+- ако съм болен няма да излизам <br>
+- ако имам пари ще си купя лекарства <br>
+- ако нямам – ще стоя вкъщи и ще пия чай <br>
+- ако съм здрав <br>
+- ако имам по-малко от 10 лв ще отида на кафе и т.н. <br>
+Полученото решение покажете като съобщение в конзолата.
+</p>
+
+<div id="inputdiv">	
+	<div id="inputbutton">
+		<button onclick="myFunction()">Task 7 btn</button>
+	</div>
+</div>
+
+
+<script>
+"use strict"
+function myFunction() {
+    var time = prompt("Въведете час (целочислен ти)", "10");
+    var money = prompt("Въведете сума пари", "33.33");
+    var health = prompt("Здрав ли сте?", "true");
+    
+    console.log(time);
+	console.log(money);
+	console.log(health);
+
+	if (time < 10) {
+	    console.log('Добро утро');
+	} else if (time < 20) {
+	    console.log('Добър ден');
+	} else {
+	    console.log('Добър вечер');
+	}
+
+    if (money > 0) {
+	    if (money <= 10) {
+	    	console.log('Болен съм. Нямам достатъчно пари за лекарства,но ще отида на кафе и ще пия чай.');	
+	    }	    
+	    else {
+	    	console.log('Болен съм. Ще си купя лекарства.');
+	    }
+	}
+	else {
+		console.log('Болен съм. Ще стоя вкъщи и ще пия чай .');
+	}
+}
+</script>
+
+</body>
+</html>
