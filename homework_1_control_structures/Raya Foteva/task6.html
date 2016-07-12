@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<p>Задача 6: <br>
+Въведете три числа от клавиатурата а1, а2 и а3. Разменете стойностите им така, че а1 да има стойността на а2, а2 да има стойността на а3, а а3 да има старата стойност на а1. </p>
+
+<div id="inputdiv">
+	<div class="input">
+		<label for="first">Въведете А1:</label>		
+		<input type="number" id="a1" value="0">
+	</div>							  
+	<div class="input">
+		<label for="second">Въведете А2:</label>		
+		<input type="number" id="a2" value="0">
+	</div>
+	<div class="input">
+		<label for="third">Въведете А3:</label>		
+		<input type="number" id="a3" value="0">
+	</div>	
+	<div id="inputbutton">
+		<button onclick="myFunction()">Резултат</button>
+	</div>
+</div>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+	var a1 = document.getElementById("a1").value;
+    var a2 = document.getElementById("a2").value;
+    var a3 = document.getElementById("a3").value;
+    var a4 = document.getElementById("a1").value;
+		
+
+	console.log('a1: ' + a1);
+	console.log('a2: ' + a2);
+	console.log('a3: ' + a3);
+
+	a1 = a2;
+	a2 = a3;
+	a3 = a4;
+
+	console.log('a1: ' + a1);
+	console.log('a2: ' + a2);
+	console.log('a3: ' + a3);
+}
+</script>
+
+</body>
+</html>

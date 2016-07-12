@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<p>Задача 1: <br>
+Да се изведат съобщения към потребителя и да се прочетат две числа от клавиатурата A и B (може да са с плаваща запетая). После да се прочете трето число C и да се провери дали то е между A и B. Да се изведе подходящо съобщение в конзолата за това дали C е между A и B. 
+</p>
+
+<div id="inputdiv">
+	<div class="input">
+		<label for="first">Въведете А:</label>		
+		<input type="number" id="a" value="0">
+	</div>							  
+	<div class="input">
+		<label for="second">Въведете В:</label>		
+		<input type="number" id="b" value="0">
+	</div>
+	<div class="input">
+		<label for="third">Въведете С:</label>		
+		<input type="number" id="c" value="0">
+	</div>	
+	<div id="inputbutton">
+		<button onclick="myFunction()">Резултат</button>
+	</div>
+</div>
+
+<script>
+"use strict";
+function myFunction() {
+    var a = document.getElementById("a").value;
+    a = parseFloat(a);
+    var b = document.getElementById("b").value;
+    b = parseFloat(b);
+    var c = document.getElementById("c").value;
+    c = parseFloat(c);
+
+    console.log(document.getElementById("a").value);
+    console.log(document.getElementById("b").value);
+    console.log(document.getElementById("c").value);
+    
+	if (((a > c) && (b < c)) || ((a < c) && (b > c))) {
+		console.log('Числото ' + c + ' e между ' + a + ' и ' + b);	
+	} else {
+		console.log('Числото ' + c + ' не e между ' + a + ' и ' + b);
+	}	
+}
+</script>
+
+</body>
+</html>
