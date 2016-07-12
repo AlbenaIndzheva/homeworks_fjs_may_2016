@@ -1,0 +1,31 @@
+<!-- Борислав Йорданов
+Задача 7: Въведете три стойности от клавиатурата – час(целочислен тип), сума пари(число с плаваща запетая), дали съм здрав(булев тип). Съставете програма, която взема решения на базата на тези данни по следния начин: 
+- ако съм болен няма да излизам 
+- ако имам пари ще си купя лекарства 
+- ако нямам – ще стоя вкъщи и ще пия чай 
+- ако съм здрав 
+- ако имам по-малко от 10 лв ще отида на кафе и т.н. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Page Title</title>
+<script type="text/javascript" src="js/scriptSeven.js"></script>
+</head>
+<body>
+<h1>Въведете стойност</h1>
+<p>час</p>
+<input type="number" min="1" max="24" id="one">
+<p>сума пари</p>
+<input placeholder="0.0" min="1" max="100" id="two">
+<p>дали съм здрав</p>
+<input type="number" min="0" max="1" id="three">
+
+<button onclick="myFunction()">ok</button>
+
+<p id="demo"></p>
+
+
+</body>
+</html>
