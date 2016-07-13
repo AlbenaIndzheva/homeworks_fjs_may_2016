@@ -1,0 +1,43 @@
+<!-- Борислав Йорданов
+Задача 10: Да се прочетат 2 числа от клавиатурата А и В. Да се изведат всички числа от А до В на степен 2(разделени с запетая). Ако някое число е кратно на 3, да се изведе съобщение че числото се пропуска „skip 3“. Ако сумата от всички изведени числа (без пропуснатите) стане по-голяма от 200, да се прекрати извеждането.   -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HW 10</title>
+</head>
+<body>
+
+<p>Въведете А</p>
+<input id="one">
+<p>Въведете B</p>
+<input id="two">
+
+<button onclick="myFunction()">ok</button>
+
+
+<script type="text/javascript">
+
+function myFunction() {
+var a, b;	
+a = document.getElementById("one").value;
+b = document.getElementById("two").value;
+
+	if ((a % 3 == 0 ) || (b % 3 == 0)){
+	console.log(N + " не е просто число");
+
+	}
+
+	else {
+
+	console.log(N + " е просто число");	
+
+	}
+
+}
+
+</script>
+
+</body>
+</html>
