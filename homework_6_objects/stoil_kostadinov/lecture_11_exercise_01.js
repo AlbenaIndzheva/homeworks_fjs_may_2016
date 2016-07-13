@@ -48,7 +48,7 @@ var SportCar = function (make, maxSpeed, currentSpeed, currentGear, numberOfDoor
 	this.price = price;
 };
 SportCar.prototype = Object.create(Car.prototype);
-SportCar.constructor = SportCar;
+SportCar.prototype.constructor = SportCar;
 SportCar.prototype.switchTurbo = function () {
 	console.log('Turbo switched');
 };
@@ -60,7 +60,7 @@ var Jeep = function (make, maxSpeed, currentSpeed, currentGear, numberOfDoors, i
 	Car.call(this, make, maxSpeed, currentSpeed, currentGear, numberOfDoors, idNumber, isSportCar, owner);
 };
 Jeep.prototype = Object.create(Car.prototype);
-Jeep.constructor = Jeep;
+Jeep.prototype.constructor = Jeep;
 Jeep.prototype.switch4x4 = function () {
 	console.log('4x4 switched');
 };
@@ -74,7 +74,7 @@ var Bus = function (make, maxSpeed, currentSpeed, currentGear, numberOfDoors, id
 	this.placeForLuggage = placeForLuggage;
 };
 Bus.prototype = Object.create(Car.prototype);
-Bus.constructor = Bus;
+Bus.prototype.constructor = Bus;
 // Static method prior es6
 Bus.busLoads = function () {
 	console.log('The Bus is loading the kids!');
