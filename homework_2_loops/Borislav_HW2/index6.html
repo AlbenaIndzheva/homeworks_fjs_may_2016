@@ -1,0 +1,38 @@
+<!-- Борислав Йорданов
+Задача 6: Да се въведе число от потребителя и да се изведе сбора на всички числа между 1 и въведеното число.   -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HW 6</title>
+</head>
+<body>
+
+<p>Въведете число</p>
+<input id="tap">
+<button onclick="myFunction()">ok</button>
+
+
+<script type="text/javascript">
+
+
+function myFunction() {
+var tap, counter, sum;	
+tap = document.getElementById("tap").value;
+sum = 0;
+
+for(counter = 1; counter <= tap; counter++) { 
+	
+	sum = sum + counter;	
+
+}
+
+alert(sum);
+
+}
+
+</script>
+
+</body>
+</html>
