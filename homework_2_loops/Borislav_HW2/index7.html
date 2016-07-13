@@ -1,0 +1,39 @@
+<!-- Борислав Йорданов
+Задача 7: Да се изведат на екрана всички числа от 1 до N, които се делят на 3 и 7 едновременно. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HW 7</title>
+</head>
+<body>
+
+<p>Въведете число</p>
+<input id="N">
+<button onclick="myFunction()">ok</button>
+
+
+<script type="text/javascript">
+
+function myFunction() {
+var N, counter;	
+N = document.getElementById("N").value;
+
+
+for(counter = 1; counter <= N; counter++){
+
+
+	if ((counter % 3 == 0 ) || (counter % 7 == 0))
+	console.log(counter) ;
+
+}
+
+	
+
+}
+
+</script>
+
+</body>
+</html>
