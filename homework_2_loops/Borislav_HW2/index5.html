@@ -1,0 +1,40 @@
+<!-- Borislav Yordanov 
+Задача 5: Да се въведат от потребителя 2 числа. И да се изведат на екрана всички числа намиращи се между тях. 
+Въведете първото число: 
+12 
+Въведете второто число: 
+15 
+12 13 14 15 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Page Title</title>
+</head>
+<body>
+
+<p>Въведете число</p>
+<input id="one">
+<p>Въведете друго число</p>
+<input id="two">
+<button onclick="myFunction()">ok</button>
+
+<script type="text/javascript">
+
+function myFunction() {
+var a, b, counter;	
+a = document.getElementById("one").value;
+b = document.getElementById("two").value;
+
+for(counter = a; counter <= b; counter++) { 
+	
+	console.log(counter);
+
+}
+}
+
+</script>
+
+</body>
+</html>
