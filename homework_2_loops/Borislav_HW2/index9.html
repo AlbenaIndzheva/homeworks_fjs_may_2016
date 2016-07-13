@@ -1,0 +1,39 @@
+<!-- Борислав Йорданов
+Задача 9: Започвайки от 3, да се изведат на екрана първите N числа които се делят на 3. Числата да са разделени със запетая.  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HW 9</title>
+</head>
+<body>
+
+<p>Въведете число</p>
+<input id="N">
+<button onclick="myFunction()">ok</button>
+
+
+<script type="text/javascript">
+
+function myFunction() {
+var N, counter;	
+N = document.getElementById("N").value;
+
+
+for(counter = 3; counter < N; counter++){
+
+
+	if (counter % 3 == 0 )
+	console.log(counter + ", ") ;
+
+}
+
+	
+
+}
+
+</script>
+
+</body>
+</html>
