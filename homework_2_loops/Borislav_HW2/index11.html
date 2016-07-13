@@ -1,0 +1,44 @@
+<!-- Борислав Йорданов
+Задача 11: Въведете число от клавиатурата и определете дали е просто. Просто число е това което е по-голямо от 1 и се дели САМО на 1 и на себе си.  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HW 11</title>
+</head>
+<body>
+
+<p>Въведете число</p>
+<input id="N">
+<button onclick="myFunction()">ok</button>
+
+<script type="text/javascript">
+
+function myFunction() {
+var N, counter,	isPrime;
+N = document.getElementById("N").value;
+
+if (N <= 1) {
+	isPrime = false;
+}
+for(counter = 2; counter < N; counter++){
+
+if (N % counter == 0){
+	isPrime = false;
+	break;
+}
+}
+	if (isPrime == false) {
+	console.log(N + " не е просто число");
+	}
+	else
+	{
+	console.log(N + " е просто число");
+}
+}
+
+</script>
+
+</body>
+</html>
