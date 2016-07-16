@@ -27,14 +27,10 @@ function line(point1, point2) {
 }
 
 function ifTriangle(line1, line2, line3) {
-    return Math.sqrt(Math.pow((point1.x - point2.x), 2) + Math.pow((point1.y - point2.y), 2));
-}
-
-function ifTriangle(line1, line2, line3) {
-    var a = getDistance(line1.pointA, line1.pointB);
-    var b = getDistance(line2.pointA, line2.pointB);
-    var c = getDistance(line3.pointA, line3.pointB);
-    return ((a + b > c) && (a + c > b) && (b + c > a));
+    var a = line1.getDistance(line1.pointA, line1.pointB);
+    var b = line2.getDistance(line2.pointA, line2.pointB);
+    var c = line3.getDistance(line3.pointA, line3.pointB);
+    return (((a + b) > c) && ((a + c) > b) && ((b + c) > a));
 } 
 
 var point1 = new Point(3, 2);
