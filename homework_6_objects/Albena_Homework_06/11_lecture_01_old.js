@@ -14,7 +14,6 @@ Hint: There is a way to implement static method “the old way”, not the EcmaS
 
 */
 
-//old method
 
 function Car(model, maxSpeed, currentSpeed, currentGear, numberOfDoors, idNumber, isSportCar, owner) {
   this.model = model;
@@ -35,7 +34,7 @@ function Car(model, maxSpeed, currentSpeed, currentGear, numberOfDoors, idNumber
   	this.currentGear = gear;
   };
   this.Accelerate = function(speed) {
-  	this.currentSpeed = his.currentSpeed + speed;
+  	this.currentSpeed = this.currentSpeed + speed;
   };
 }
 
@@ -74,12 +73,12 @@ Bus.prototype.driveOnRoad = function() {
 	console.log("driving OnRoad");
 };
 
-
+// method
 console.log(Car);
 		
 var Nissan = new Car("GT-R", 330, 160, "nissanGera", 3, 123156, "yes", "Ivan");
 Nissan.changeOwner("Albena");   
-Nissan.startEngine;
+Nissan.startEngine();
 
 console.log(Nissan instanceof Car); 
- 
+console.log(Nissan);
