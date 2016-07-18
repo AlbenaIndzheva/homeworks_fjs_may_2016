@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style-dropdown.css" media="screen" />
+</head>
+<body>
+
+<h2>Dropdown</h2>
+
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Programming language</button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a>
+        <a href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a>
+        <a href="https://en.wikipedia.org/wiki/JavaScript">Javascript</a>
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
+
