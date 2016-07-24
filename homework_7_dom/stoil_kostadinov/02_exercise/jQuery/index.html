@@ -16,7 +16,7 @@
                 <div class="input-group" id="userNameBox">
                     <label for="userName">User Name</label>
                     <input type="text" name="userName" id="userName" placeholder="User Name" required="required">
-                    <span class="error-message">The username field can contain only alphanumeric characters "A-za-z0-9".</span>
+                    <span class="error-message">The username field can contain only alphanumeric characters "A-za-z0-9" and "-_".</span>
                 </div>
                 <div class="input-group" id="emailBox">
                     <label for="email">Email</label>
@@ -34,10 +34,10 @@
                     <span class="error-message">The password should be at least 8 characters long and passwords must match!</span>
                 </div>
                 <div class="input-group" id="submitBox">
-                    <input type="submit" id="submit" name="submit" value="Sign Up">
+                    <button type="submit" id="submit">Sign Up</button>
                 </div>
             </form>
-        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
